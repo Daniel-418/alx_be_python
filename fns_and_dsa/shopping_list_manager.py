@@ -12,16 +12,16 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item = input("Enter item to add: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
         elif choice == '2':
-            item = input("Enter item to remove: ")
+            item = input("Enter the item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
             else:
                 print("{} not in shopping list".format(item))
         elif choice == '3':
-            counter = 0
+            counter = 1
             for item in shopping_list:
                 print("{}. {}".format(counter, item))
                 counter += 1
