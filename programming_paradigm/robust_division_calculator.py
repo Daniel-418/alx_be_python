@@ -1,6 +1,6 @@
 def safe_divide(numerator, denominator):
     try:
-        return ("The return of the division is {}"
+        return ("The result of the division is {}"
                 .format(float(numerator) / float(denominator)))
     except (ZeroDivisionError, ValueError) as e:
         if isinstance(e, ValueError):
