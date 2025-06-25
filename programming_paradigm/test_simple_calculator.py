@@ -23,7 +23,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(5.5, 2.2), 3.3)
         self.assertAlmostEqual(self.calc.subtract(3.333, 1.111), 2.222, places=3)
 
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test multiplication including zero and negative numbers."""
         self.assertEqual(self.calc.multiply(3, 4), 12)
         self.assertEqual(self.calc.multiply(-2, 5), -10)
@@ -31,7 +31,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(0, 10), 0)
         self.assertEqual(self.calc.multiply(2.5, 4), 10.0)
 
-    def test_divide(self):
+    def test_division(self):
         """Test division and handle division by zero."""
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertEqual(self.calc.divide(-9, 3), -3)
